@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+    <title>Twitter Crawler</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <div class="tweets-container">
+    <div class="tweets">
+      <% for(tweet of tweets) {%>
+        <div class="tweet">
+          <div class="avatar">
+            <img src="<%= tweet.avatar %>" />
+          </div>
+          <div>
+            <span class="username">
+              <%= tweet.name %>
+              <a href="https://twitter.com/<%= tweet.userName %>">@<%= tweet.userName %></a>
+            </span>
+            <div>
+              <%- tweet.content %>
+            </div>
+          </div>
+        </div>
+        <% } %>
+      </div>
+  </div>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>

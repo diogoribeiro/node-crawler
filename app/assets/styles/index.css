@@ -1,0 +1,34 @@
+body {
+  background: #f8f8f8;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.tweets-container {
+  padding: 50px;
+}
+
+.tweets {
+  display: none;
+  margin: 0 auto;
+  width: 50vw;
+}
+
+.slick-vertical .tweet.slick-slide {
+  align-items: center;
+  display: flex;
+  height: 180px;
+}
+
+.avatar {
+  margin-right: 20px;
+}
+
+.avatar img {
+  border-radius: 50px;
+}
+
+.username {
+  font-weight: 800;
+}

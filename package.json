@@ -1,0 +1,22 @@
+{
+  "name": "twitter-scraper",
+  "version": "1.0.0",
+  "description": "twitter scraper",
+  "main": "app/server.js",
+  "scripts": {
+    "lint": "eslint app/",
+    "start": "nodemon app/server.js"
+  },
+  "author": "Diogo Ribeiro",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "sanitize-html": "^1.19.1",
+    "scrape-it": "^5.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "nodemon": "^1.18.4"
+  }
+}
